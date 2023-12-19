@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class BasicAPP {
     public static void main(String[] args) {
         secondsToTime(86399);
