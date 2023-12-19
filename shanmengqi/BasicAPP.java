@@ -3,6 +3,39 @@ public class BasicAPP {
         secondsToTime(86399);
     }
 
+    //19. integer to binary
+    public static void initegerToBinary(int temp) {
+
+        ArrayList<Integer> output = new ArrayList<Integer>();
+
+        while(temp !=0) {
+            output.add(temp % 2);
+            temp = temp / 2;
+            //count ++;
+        }
+
+        for(int i=output.size()-1;i>=0;i--) {
+            System.out.print(output.get(i));
+        }
+
+
+
+    }
+    //22. Write a Java program to convert a binary number to a decimal number.
+    public static void binaryToDecimal(int temp) {
+        long decimal=0;
+        int count = 0;
+        while(temp !=0) {
+            decimal = decimal+(long) ((temp % 10)*(Math.pow(2, count)));
+            temp = temp / 10;
+            count++;
+        }
+
+        System.out.println(decimal);
+    }
+
+
+
 
     //33. Write a Java program and compute the sum of an integer's digits.
     public static void intSumDigits(int temp){
