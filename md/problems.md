@@ -1,6 +1,7 @@
 ## Java Basic Exercises
 15. Write a Java program to swap two variables.
 
+
 19. Write a Java program to convert an integer number to a binary number.
     
     Input Data:
@@ -21,11 +22,63 @@ Expected Output
 
 Decimal Number: 4 
 
-33 37 39 44
+33. Write a Java program and compute the sum of an integer's digits.
+    
+Input Data:
+    
+Input an integer: 25
+   
+Expected Output
+
+The sum of the digits is: 7
+
+37. Write a Java program to reverse a string.
+
+    Input Data:
+
+    Input a string: The quick brown fox
+
+    Expected Output
+
+
+Reverse string: xof nworb kciuq ehT
+
+39. Write a Java program to create and display a unique three-digit number using 1, 2, 3, 4. Also count how many three-digit numbers are there.
+    Expected Output
+
+123                                                      
+124                                                      
+...
+
+431                                                      
+432                         
+
+Total number of the three-digit-number is 24
+
+44. Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn.
+    
+Sample Output:
+
+Input number: 5                                                        
+5 + 55  + 555 = 615
+
+50. Write a Java program to print numbers between 1 and 100 divisible by 3, 5 and both.
+    Sample Output:
+
+Divided by 3:                                                          
+3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57
+, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99,
+
+Divided by 5:                                                          
+5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90,
+95,
+
+Divided by 3 & 5:                                                      
+15, 30, 45, 60, 75, 90,
+
+
     
 
-    abc
-cdf
     
 
 
