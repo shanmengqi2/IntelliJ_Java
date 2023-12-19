@@ -1,6 +1,6 @@
 public class APP {
     public static void main(String[] args) {
-        calcNNN(5);
+        pro50();
     }
 
 
@@ -84,5 +84,55 @@ public class APP {
     //Divided by 3 & 5:
     //15, 30, 45, 60, 75, 90,
 
+    public static void pro50(){
+        int[] byThree = new int[50];
+        int[] byFive = new int[50];
+        int[] byThreeFive = new int[50];
+        int count1 = 0, count2=0,count3=0;
+        for(int i=1;i<101;i++){
+            if(i % 3 ==0){
+                byThree[count1] = i;
+                count1++;
+                if(i % 5 ==0){
+                    byThreeFive[count2] = i;
+                    byFive[count3] = i;
+                    count2++;
+                    count3++;
+                }
+            }
+            else if (i % 5 ==0) {
+                byFive[count3] = i;
+                count3 ++;
+            }
 
+            }
+
+
+        //print by 3
+        System.out.println("Divided by 3:");
+
+        for (int i=0;i<count1;i++){
+            System.out.print(byThree[i]+", ");
+        }
+        System.out.println();
+
+        //print by 5
+        System.out.println("Divided by 5:");
+        for (int i=0;i<count3;i++){
+            System.out.print(byFive[i]+", ");
+        }
+        System.out.println();
+
+        //print by 3/5
+        System.out.println("Divided by 3/5:");
+        for(int i=0;i<count2;i++){
+            System.out.print(byThreeFive[i]+", ");
+        }
+
+
+
+    }
 }
+
+
+
