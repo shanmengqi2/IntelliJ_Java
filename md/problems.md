@@ -76,6 +76,25 @@ Divided by 5:
 Divided by 3 & 5:                                                      
 15, 30, 45, 60, 75, 90,
 
+55. Write a Java program to convert seconds to hours, minutes and seconds.
+    Sample Output:
+
+Input seconds: 86399                                                   
+23:59:59
+
+
+
+
+* 注意，每一版块的题会随机更新；如果某一版块的题全部更新完，我会在最后加上（end),没加就是还会更新。
+## Java Conditional Statement Exercises
+2. Write a Java program to solve quadratic equations (use if, else if and else).
+一元二次方程格式如下：ax^2 + bx + c = 0 (a≠0)
+Test Data
+Input a: 1
+Input b: 5
+Input c: 1
+Expected Output :
+The roots are -0.20871215252208009 and -4.7912878474779195
 
     
 
