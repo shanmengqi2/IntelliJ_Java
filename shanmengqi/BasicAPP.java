@@ -1,6 +1,6 @@
-public class APP {
+public class BasicAPP {
     public static void main(String[] args) {
-        pro50();
+        secondsToTime(86399);
     }
 
 
@@ -131,6 +131,20 @@ public class APP {
 
 
 
+    }
+
+
+    //55. Write a Java program to convert seconds to hours, minutes and seconds.
+    //    Sample Output:
+    //
+    //Input seconds: 86399
+    //23:59:59
+    public static void secondsToTime(int seconds){
+        int hour = seconds / 3600;
+        int minute = (seconds - 3600*hour) / 60;
+        int second = (seconds - 3600*hour) % 60;
+
+        System.out.println(hour+":"+minute+":"+second);
     }
 }
 

@@ -86,6 +86,7 @@ Input seconds: 86399
 
 
 * 注意，每一版块的题会随机更新；如果某一版块的题全部更新完，我会在最后加上（end),没加就是还会更新。
+
 ## Java Conditional Statement Exercises
 2. Write a Java program to solve quadratic equations (use if, else if and else).
 一元二次方程格式如下：ax^2 + bx + c = 0 (a≠0)
