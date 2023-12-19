@@ -40,8 +40,7 @@ public class APP {
     //432
     //Total number of the three-digit-number is 24
     public static void threeDigit(){
-     //   int[] number = {1,2,3,4};
-      //  System.out.println(number[0]);
+
         int count = 0;
         for(int i=1;i<5;i++){
             for(int j=1;j<5;j++){
@@ -49,6 +48,8 @@ public class APP {
                     if(i!=j && j!=k && i!=k){
                         System.out.println(i+""+j+k+"\n");
                         count++;
+
+
 
                     }
                 }
