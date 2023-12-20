@@ -123,9 +123,16 @@ The roots are -0.20871215252208009 and -4.7912878474779195
 
 未完待续。。。
 
-    
+* 注意，每一版块的题会随机更新；如果某一版块的题全部更新完，我会在最后加上（end),没加就是还会更新。
+## Java Object Oriented Programming Exercises
 
-    
+2. Write a Java program to create a class called "Dog" with a name and breed attribute. 
+    Create two instances of the "Dog" class, 
+    set their attributes using the constructor and modify the attributes 
+    using the setter methods and print the updated values.
+
+
+
 
 
 
