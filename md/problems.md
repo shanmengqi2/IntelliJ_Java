@@ -131,9 +131,8 @@ The roots are -0.20871215252208009 and -4.7912878474779195
     set their attributes using the constructor and modify the attributes 
     using the setter methods and print the updated values.
 
-4. Write a Java program to create a class called "Circle" with a radius attribute. 
-You can access and modify this attribute. 
-Calculate the area and circumference of the circle.
+
+5. Write a Java program to create a class called "Book" with attributes for title, author, and ISBN, and methods to add and remove books from a collection.
 
 
 
