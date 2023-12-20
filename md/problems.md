@@ -88,12 +88,6 @@ Sample Output:
 
 5
 
-58. Write a Java program to capitalize the first letter of each word in a sentence.
-    Sample Output:
-
-Input a Sentence: the quick brown fox jumps over the lazy dog.         
-
-The Quick Brown Fox Jumps Over The Lazy Dog.
 
 62. Write a Java program that accepts three integer values and returns true if one is 20 or more less than the others' subtractions.
     Sample Output:

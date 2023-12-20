@@ -5,10 +5,18 @@ public class OopAPP {
         Dog dog1 = new Dog();
         Dog dog2 = new Dog("wangwang","jinmao");
 
-        Book bk1 = new Book("song of ice and fire","RRMARTIN","1**3322-88475");
 
+        //BookClass in main
+        Book bk1 = new Book("song of ice and fire","RRMARTIN","1**3322-88475");
+        Book bk2 = new Book("song of ice and fire2","RRMARTIN","1**3322-88476");
         Book.addCollection(bk1);
-        System.out.println(Book.getCollection());
+        Book.addCollection(bk2);
+
+        ArrayList < Book > bookCollection = Book.getCollection();
+
+        for (Book book: bookCollection) {
+            System.out.println(book.get_Title() + " by " + book.get_Author() + ", ISBN: " + book.get_ISBN());
+        }
 
     }
 }
@@ -79,5 +87,28 @@ class Book{
     //return Collection
     public static ArrayList<Book> getCollection(){
         return bookCollection;
+    }
+    public String get_Title() {
+        return title;
+    }
+
+    public void set_Title(String title) {
+        this.title = title;
+    }
+
+    public String get_Author() {
+        return author;
+    }
+
+    public void set_Author(String author) {
+        this.author = author;
+    }
+
+    public String get_ISBN() {
+        return ISBN;
+    }
+
+    public void set_ISBN(String ISBN) {
+        this.ISBN = ISBN;
     }
 }
