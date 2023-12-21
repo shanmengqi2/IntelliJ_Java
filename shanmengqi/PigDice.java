@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class PigDice {
     public static void main(String[] args) {
-        int ppots = 0;
-        int cpots = 0;
-        int thisRound=0;
-        int lastTotal;
+        int ppots = 0;  //玩家总分
+        int cpots = 0;  //AI总分
+        int thisRound=0; //玩家一轮得分（骰出1或选择hold前为一轮）
+        int lastTotal; //一轮游戏开始时，玩家的总分
         System.out.println("Welcome to PigDice, enjoy your game!");
         System.out.println("You will roll first.");
         Scanner scan = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class PigDice {
             while(true){
 
                 System.out.println("It's players round!");
-                int temp = PlayerRoll();
+                int temp = PlayerRoll(); //temp为玩家每次rollDice时的数值
 
                 if(temp == 1){
                     System.out.println("Player rolls 1, round ends.");
@@ -28,9 +28,9 @@ public class PigDice {
                     break;
                 }
                 else{
-                    thisRound = thisRound+temp;
+                    thisRound = thisRound+temp;  //thisRound仅为展示，不参与总分ppots计算
                     System.out.println("Player rolls "+thisRound+" in this round");
-                    ppots = ppots+temp;
+                    ppots = ppots+temp;  //游戏总分计算累加要用temp，这里我一开始写了thisRound，产生了重复计算。
 
                     //ceshidian
                     //System.out.println("ppots after add:"+ppots);
