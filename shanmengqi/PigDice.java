@@ -5,6 +5,7 @@ public class PigDice {
         int ppots = 0;
         int cpots = 0;
         int thisRound=0;
+        int lastTotal;
         System.out.println("Welcome to PigDice, enjoy your game!");
         System.out.println("You will roll first.");
         Scanner scan = new Scanner(System.in);
@@ -13,23 +14,33 @@ public class PigDice {
         //boolean isPlayersRound = true;
         boolean isComputerRound = true;
         while(flag){
+            thisRound = 0;
+            lastTotal = ppots;
             while(true){
+
                 System.out.println("It's players round!");
                 int temp = PlayerRoll();
-
-                thisRound = thisRound+temp;
-                System.out.println("Player rolls "+thisRound+" in this round");
-                ppots = ppots+thisRound;
-                System.out.println("Player has so far "+ppots+" points in total game;");
 
                 if(temp == 1){
                     System.out.println("Player rolls 1, round ends.");
                     thisRound = 0;
-                    //isPlayersRound = false;
-                    //isComputerRound = true;
+                    ppots = lastTotal;
                     break;
                 }
                 else{
+                    thisRound = thisRound+temp;
+                    System.out.println("Player rolls "+thisRound+" in this round");
+                    ppots = ppots+temp;
+
+                    //ceshidian
+                    //System.out.println("ppots after add:"+ppots);
+
+                    if(ppots >= 100){
+                        System.out.println("Player wins!");
+                        flag = false;
+                        isComputerRound = false;
+                        break;
+                    }
 
                     System.out.println("Continue or hold?(c/h)");
                     String isGoingOn = scan.nextLine();
@@ -40,26 +51,22 @@ public class PigDice {
 
                     }
                     else if(isGoingOn.equals("h")){
-                        System.out.println("Player round ends, got "+ppots+" total");
+                        System.out.println("Player round ends, got "+thisRound+" total");
                         //isPlayersRound = false;
                         break;
                     }
                 }
 
-                if(ppots >= 100){
-                    System.out.println("Player wins!");
-                    flag = false;
-                    isComputerRound = false;
-                    break;
-                }
-
-
-
             }
+
+
+            System.out.println("Player has so far "+ppots+" points in total game;");
+
 
             if (isComputerRound){
                 System.out.println("It's AI'S round.");
                 cpots = cpots+ComRoll();
+                System.out.println("AI HAS "+cpots+" in total game");
                 if(cpots>=100){
                     System.out.println("AI WINS!");
                    // isPlayersRound = false;
