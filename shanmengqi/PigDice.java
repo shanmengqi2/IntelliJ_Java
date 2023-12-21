@@ -100,7 +100,7 @@ public class PigDice {
         }
 
         System.out.println("AI GOT: "+cpots+"points this turn");
-        return roll;
+        return cpots;
     }
 
     public static int PlayerRoll(){
