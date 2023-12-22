@@ -5,7 +5,8 @@ public class PigDice {
         int ppots = 0;  //玩家总分
         int cpots = 0;  //AI总分
         int thisRound=0; //玩家一轮得分（骰出1或选择hold前为一轮）
-        int lastTotal; //一轮游戏开始时，玩家的总分
+        int lastTotal; //一轮游戏开始时，玩家总分。因为我想在游戏中即时判断总分是否超过100，所以需要及时累加；同时如果roll到1，那么等于累加的部分还要被清空。
+                        //于是如果roll到1，那么累加部分无效，让总分直接等于上一轮的总分即可。
         System.out.println("Welcome to PigDice, enjoy your game!");
         System.out.println("You will roll first.");
         Scanner scan = new Scanner(System.in);
