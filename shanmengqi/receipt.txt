@@ -1,0 +1,3 @@
+gas costs $ 1.959 per gallon.
+How many gallons do you want? 7.98
+Total cost: $ 15.63282

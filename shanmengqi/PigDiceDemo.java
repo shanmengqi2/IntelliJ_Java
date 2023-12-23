@@ -49,7 +49,6 @@ public class PigDiceDemo {
 
             }
 
-
         }
 
         if (cpoint > ppoint) {
